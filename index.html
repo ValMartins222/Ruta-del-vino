@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Línea 3 · Ruta del Vino — TIM Mendoza</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="tim-linea3-v2.css" />
+</head>
+<body>
+
+  <!-- ── Navbar ── -->
+  <nav class="navbar" aria-label="Navegación principal">
+    <div class="inner">
+      <a class="nav-brand" href="https://mrosariopresedo.github.io/nexo-studio-tim/" aria-label="TIM - Terminal Inteligente de Mendoza">
+        <div class="nav-logo">TIM</div>
+        <span>Terminal Inteligente de Mendoza</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="larga-distancia.html">Larga Distancia</a></li>
+        <li><a href="alta-montana.html">Alta Montaña</a></li>
+        <li><a href="linea3-ruta-del-vino.html" class="active" aria-current="page">Ruta del Vino</a></li>
+        <li><a href="aeropuerto.html">Aeropuerto</a></li>
+        <li><a href="universitario.html">Universitario</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <header class="hero" role="banner">
+    <div class="inner">
+      <div class="hero-badge anim">
+        <span class="dot" aria-hidden="true"></span>
+        Servicio activo · Temporada 2026
+      </div>
+      <h1 class="anim anim-d1">
+        <span>Línea 3</span>
+        Bus Vitivinícola<br>Ruta del Vino
+      </h1>
+      <p class="hero-desc anim anim-d2">
+        Recorrido turístico diario desde la Terminal TIM hasta las principales
+        bodegas y viñedos de Luján de Cuyo y Maipú. Tu puerta de entrada al
+        mundo del Malbec mendocino.
+      </p>
+      <div class="hero-chips anim anim-d3">
+        <div class="chip">
+          <!-- ícono location -->
+          <svg class="ico ico-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+          </svg>
+          Luján de Cuyo
+        </div>
+        <div class="chip">
+          <svg class="ico ico-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+          </svg>
+          Maipú
+        </div>
+        <div class="chip">
+          <!-- ícono bus -->
+          <svg class="ico ico-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+          6 paradas
+        </div>
+        <div class="chip">
+          <!-- ícono reloj -->
+          <svg class="ico ico-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+          </svg>
+          Frecuencia: 60 min
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Info rápida ── -->
+  <div class="info-bar" aria-label="Información rápida del servicio">
+    <div class="inner">
+
+      <div class="info-item">
+        <div class="info-icon">
+          <svg class="ico ico-md" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+          </svg>
+        </div>
+        <div><div class="info-label">Primer salida</div><div class="info-val">08:00 hs</div></div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon">
+          <svg class="ico ico-md" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+          </svg>
+        </div>
+        <div><div class="info-label">Última salida</div><div class="info-val">17:00 hs</div></div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon">
+          <!-- ícono refresh -->
+          <svg class="ico ico-md" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+          </svg>
+        </div>
+        <div><div class="info-label">Frecuencia</div><div class="info-val">Cada 60 min</div></div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon">
+          <!-- ícono timer -->
+          <svg class="ico ico-md" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12"/><line x1="12" y1="12" x2="15" y2="15"/>
+          </svg>
+        </div>
+        <div><div class="info-label">Duración total</div><div class="info-val">~2 hs</div></div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon">
+          <!-- ícono tag -->
+          <svg class="ico ico-md" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/>
+          </svg>
+        </div>
+        <div><div class="info-label">Tarifa</div><div class="info-val">$3.800 / ida</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── Contenido principal ── -->
+  <main class="page-content" id="main-content">
+
+    <!-- DESTINOS -->
+    <section aria-labelledby="destinos-h2" class="anim">
+      <div class="section-header">
+        <h2 id="destinos-h2">Destinos principales</h2>
+        <span class="section-tag">Bodegas &amp; Viñedos</span>
+      </div>
+      <div class="destinos-grid">
+
+        <article class="destino-card">
+          <span class="destino-icon">
+            <svg class="ico ico-lg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </span>
+          <div class="destino-name">Bodega Catena Zapata</div>
+          <p class="destino-desc">Ícono del Malbec argentino. Arquitectura piramidal en pleno corazón de Agrelo, Luján de Cuyo. Catas premium y vista a los Andes.</p>
+          <div class="destino-meta">
+            <span>
+              <svg class="ico ico-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Agrelo, Luján de Cuyo
+            </span>
+            <span>Malbec · Cabernet</span>
+          </div>
+        </article>
+
+        <article class="destino-card">
+          <span class="destino-icon">
+            <svg class="ico ico-lg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z"/><path d="M12 6v6l4 2"/>
+            </svg>
+          </span>
+          <div class="destino-name">Bodega Norton</div>
+          <p class="destino-desc">Clásica y elegante, fundada en 1895. Ofrece recorridos por su histórica bodega y degustaciones de sus varietales insignia.</p>
+          <div class="destino-meta">
+            <span>
+              <svg class="ico ico-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Perdriel, Luján de Cuyo
+            </span>
+            <span>Malbec · Torrontés</span>
+          </div>
+        </article>
+
+        <article class="destino-card">
+          <span class="destino-icon">
+            <svg class="ico ico-lg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
+            </svg>
+          </span>
+          <div class="destino-name">Bodega Trapiche</div>
+          <p class="destino-desc">Historia y tradición enológica desde 1883. Referente nacional e internacional, ideal para combinar cata con museo del vino en Maipú.</p>
+          <div class="destino-meta">
+            <span>
+              <svg class="ico ico-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Coquimbito, Maipú
+            </span>
+            <span>Malbec · Chardonnay</span>
+          </div>
+        </article>
+
+        <article class="destino-card">
+          <span class="destino-icon">
+            <svg class="ico ico-lg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </span>
+          <div class="destino-name">Bodega Zuccardi</div>
+          <p class="destino-desc">Innovación y gastronomía de primer nivel. Reconocida entre las mejores bodegas del mundo, ofrece experiencias de enoturismo únicas.</p>
+          <div class="destino-meta">
+            <span>
+              <svg class="ico ico-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Russell, Maipú
+            </span>
+            <span>Malbec · Bonarda</span>
+          </div>
+        </article>
+
+        <article class="destino-card">
+          <span class="destino-icon">
+            <svg class="ico ico-lg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </span>
+          <div class="destino-name">Bodega Ruca Malén</div>
+          <p class="destino-desc">Estilo boutique con impresionante vista a la Cordillera. Reconocida por su gastronomía maridada y vinos de alta gama.</p>
+          <div class="destino-meta">
+            <span>
+              <svg class="ico ico-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              RN 7 km 1059, Luján
+            </span>
+            <span>Syrah · Malbec</span>
+          </div>
+        </article>
+
+        <article class="destino-card">
+          <span class="destino-icon">
+            <svg class="ico ico-lg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+          </span>
+          <div class="destino-name">Bodega Séptima</div>
+          <p class="destino-desc">Arte y vino en perfecta armonía. Sus instalaciones combinan diseño contemporáneo con colecciones de arte y catas guiadas.</p>
+          <div class="destino-meta">
+            <span>
+              <svg class="ico ico-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              RN 7 km 6.5, Luján
+            </span>
+            <span>Malbec · Cabernet Franc</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <hr class="section-divider" aria-hidden="true" />
+
+    <!-- PARADAS -->
+    <section aria-labelledby="paradas-h2" class="anim anim-d1">
+      <div class="section-header">
+        <h2 id="paradas-h2">Paradas del recorrido</h2>
+        <span class="section-tag">6 estaciones</span>
+      </div>
+      <div class="paradas-list" role="list">
+
+        <div class="parada" role="listitem">
+          <div class="parada-dot terminal" aria-hidden="true"></div>
+          <div class="parada-content">
+            <div class="parada-num">Parada 0 · Origen</div>
+            <div class="parada-name">Terminal TIM — Guaymallén</div>
+            <div class="parada-info">
+              <span>
+                <svg class="ico ico-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Juan B. Alberdi s/n, Guaymallén
+              </span>
+              <span>Estacionamiento disponible</span>
+              <span class="badge-acceso">
+                <svg class="ico ico-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                Accesible
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="parada" role="listitem">
+          <div class="parada-dot" aria-hidden="true"></div>
+          <div class="parada-content">
+            <div class="parada-num">Parada 1</div>
+            <div class="parada-name">Centro de Información Turística — Garibaldi y San Martín</div>
+            <div class="parada-info">
+              <span>
+                <svg class="ico ico-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Garibaldi 10, Ciudad de Mendoza
+              </span>
+              <span>+10 min desde TIM</span>
+              <span class="badge-acceso">Accesible</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="parada" role="listitem">
+          <div class="parada-dot" aria-hidden="true"></div>
+          <div class="parada-content">
+            <div class="parada-num">Parada 2</div>
+            <div class="parada-name">Maipú Centro — Av. Ozamis y Urquiza</div>
+            <div class="parada-info">
+              <span>
+                <svg class="ico ico-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Coquimbito, Maipú
+              </span>
+              <span>+30 min desde TIM</span>
+              <span>Servicios gastronómicos</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="parada" role="listitem">
+          <div class="parada-dot" aria-hidden="true"></div>
+          <div class="parada-content">
+            <div class="parada-num">Parada 3</div>
+            <div class="parada-name">Bodega Trapiche / Zuccardi — Maipú</div>
+            <div class="parada-info">
+              <span>
+                <svg class="ico ico-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Ruta Provincial 15, Maipú
+              </span>
+              <span>+45 min desde TIM</span>
+              <span class="badge-acceso">Accesible</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="parada" role="listitem">
+          <div class="parada-dot" aria-hidden="true"></div>
+          <div class="parada-content">
+            <div class="parada-num">Parada 4</div>
+            <div class="parada-name">Luján de Cuyo — Perdriel / Norton / Séptima</div>
+            <div class="parada-info">
+              <span>
+                <svg class="ico ico-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                RN 7 km 1056–1059, Luján
+              </span>
+              <span>+75 min desde TIM</span>
+              <span class="badge-acceso">Accesible</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="parada" role="listitem">
+          <div class="parada-dot terminal" aria-hidden="true"></div>
+          <div class="parada-content">
+            <div class="parada-num">Parada 5 · Destino final</div>
+            <div class="parada-name">Catena Zapata / Ruca Malén — Agrelo</div>
+            <div class="parada-info">
+              <span>
+                <svg class="ico ico-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Agrelo, Luján de Cuyo
+              </span>
+              <span>+100 min desde TIM</span>
+              <span>Zona premium</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="section-divider" aria-hidden="true" />
+
+    <!-- MAPA -->
+    <section aria-labelledby="mapa-h2" class="anim anim-d2">
+      <div class="section-header">
+        <h2 id="mapa-h2">Mapa del recorrido</h2>
+        <span class="section-tag">Luján · Maipú · Mendoza</span>
+      </div>
+      <div class="mapa-wrap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53543.91!2d-68.8920!3d-33.0090!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e09d6e4a1c3c7%3A0x2f4a3c5b6e7d8f9a!2sLuj%C3%A1n%20de%20Cuyo%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1716000000000"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa del recorrido Línea 3 Ruta del Vino"
+          aria-label="Mapa interactivo del recorrido de la Línea 3"
+        ></iframe>
+        <div class="mapa-caption">
+          <svg class="ico ico-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Recorrido: Terminal TIM (Guaymallén) → Ciudad de Mendoza → Maipú → Luján de Cuyo → Agrelo
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" aria-hidden="true" />
+
+    <!-- HORARIOS -->
+    <section aria-labelledby="horarios-h2" class="anim anim-d1">
+      <div class="section-header">
+        <h2 id="horarios-h2">Horarios del servicio</h2>
+        <span class="section-tag">Temporada 2026</span>
+      </div>
+      <div class="horarios-grid">
+
+        <div class="horario-block">
+          <h3>
+            <svg class="ico ico-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Lunes a Viernes
+          </h3>
+          <table class="tabla-horarios" aria-label="Horarios de lunes a viernes">
+            <thead>
+              <tr>
+                <th scope="col">Salida TIM</th>
+                <th scope="col">Llegada Maipú</th>
+                <th scope="col">Llegada Agrelo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>08:00</td><td>08:45</td><td>10:20</td></tr>
+              <tr><td>09:00</td><td>09:45</td><td>11:20</td></tr>
+              <tr><td>10:00</td><td>10:45</td><td>12:20</td></tr>
+              <tr><td>11:00</td><td>11:45</td><td>13:20</td></tr>
+              <tr><td>13:00</td><td>13:45</td><td>15:20</td></tr>
+              <tr><td>15:00</td><td>15:45</td><td>17:20</td></tr>
+              <tr><td>17:00</td><td>17:45</td><td>19:20</td></tr>
+            </tbody>
+            <tfoot>
+              <tr><td colspan="3">Último retorno desde Agrelo: 19:00 hs</td></tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <div class="horario-block">
+          <h3>
+            <svg class="ico ico-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Sábados, domingos y feriados
+          </h3>
+          <table class="tabla-horarios" aria-label="Horarios de fines de semana y feriados">
+            <thead>
+              <tr>
+                <th scope="col">Salida TIM</th>
+                <th scope="col">Llegada Maipú</th>
+                <th scope="col">Llegada Agrelo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>08:00</td><td>08:45</td><td>10:20</td></tr>
+              <tr><td>09:30</td><td>10:15</td><td>11:50</td></tr>
+              <tr><td>11:00</td><td>11:45</td><td>13:20</td></tr>
+              <tr><td>12:30</td><td>13:15</td><td>14:50</td></tr>
+              <tr><td>14:00</td><td>14:45</td><td>16:20</td></tr>
+              <tr><td>15:30</td><td>16:15</td><td>17:50</td></tr>
+              <tr><td>17:00</td><td>17:45</td><td>19:20</td></tr>
+            </tbody>
+            <tfoot>
+              <tr><td colspan="3">Último retorno desde Agrelo: 19:30 hs</td></tr>
+            </tfoot>
+          </table>
+          <div class="frecuencia-note" role="note">
+            <svg class="ico ico-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            Durante la Vendimia (feb–mar) se agregan salidas extraordinarias a las 07:00 y 18:00 hs. Consultá disponibilidad en boletería.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="section-divider" aria-hidden="true" />
+
+    <!-- ACCESIBILIDAD -->
+    <section aria-labelledby="acceso-h2" class="anim anim-d2">
+      <div class="section-header">
+        <h2 id="acceso-h2">Accesibilidad</h2>
+        <span class="section-tag">WCAG 2.1 · AA</span>
+      </div>
+      <div class="accesibilidad-grid">
+
+        <div class="acceso-item">
+          <div class="acceso-ico">
+            <svg class="ico ico-md" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="4" r="2"/><path d="M19 13v-2a7 7 0 0 0-14 0v2"/><path d="M5 21l2-6h10l2 6"/>
+            </svg>
+          </div>
+          <div class="acceso-text">
+            <h4>Rampa hidráulica</h4>
+            <p>Todas las unidades cuentan con rampa de acceso para sillas de ruedas y movilidad reducida.</p>
+          </div>
+        </div>
+
+        <div class="acceso-item">
+          <div class="acceso-ico">
+            <svg class="ico ico-md" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>
+            </svg>
+          </div>
+          <div class="acceso-text">
+            <h4>Espacios reservados</h4>
+            <p>2 lugares exclusivos por unidad para sillas de ruedas con cinturones de seguridad homologados.</p>
+          </div>
+        </div>
+
+        <div class="acceso-item">
+          <div class="acceso-ico">
+            <svg class="ico ico-md" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+            </svg>
+          </div>
+          <div class="acceso-text">
+            <h4>Información sonora</h4>
+            <p>Anuncios automáticos en cada parada con nombre de la bodega y tiempo estimado de estadía.</p>
+          </div>
+        </div>
+
+        <div class="acceso-item">
+          <div class="acceso-ico">
+            <svg class="ico ico-md" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>
+            </svg>
+          </div>
+          <div class="acceso-text">
+            <h4>Señalización de alto contraste</h4>
+            <p>Cartelería con contraste mínimo 4.5:1 (WCAG 1.4.3 AA). Tipografía Inter, legible en todos los tamaños.</p>
+          </div>
+        </div>
+
+        <div class="acceso-item">
+          <div class="acceso-ico">
+            <svg class="ico ico-md" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/>
+            </svg>
+          </div>
+          <div class="acceso-text">
+            <h4>Clima controlado</h4>
+            <p>Aire acondicionado y calefacción en todas las unidades para confort de pasajeros en todas las estaciones.</p>
+          </div>
+        </div>
+
+        <div class="acceso-item">
+          <div class="acceso-ico">
+            <svg class="ico ico-md" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+            </svg>
+          </div>
+          <div class="acceso-text">
+            <h4>Mapa táctil en paradas</h4>
+            <p>Plano del recorrido en relieve con descripción Braille en la Terminal TIM y el CIT de Ciudad de Mendoza.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="wcag-note" role="complementary" aria-label="Nota sobre estándares de accesibilidad">
+        <div class="wcag-ico">
+          <svg class="ico ico-md" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
+        <span>
+          <strong>Cumplimiento WCAG 2.1:</strong> Este sitio aplica criterios de contraste ≥ 4.5:1 (Nivel AA), botones con área mínima de 44×44 px (Criterio 2.5.5), texto alternativo en imágenes y tablas navegables por teclado con atributos ARIA. Para asistencia adicional contactá a:
+          <a href="mailto:accesibilidad@tim.mendoza.gob.ar">accesibilidad@tim.mendoza.gob.ar</a>
+        </span>
+      </div>
+
+      <div class="btn-row">
+        <a href="accesibilidad.html" class="btn-primary">
+          <svg class="ico ico-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          Guía de accesibilidad
+        </a>
+        <a href="contacto.html" class="btn-secondary">
+          <svg class="ico ico-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Contacto / Ayuda
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">TIM — Terminal Inteligente de Mendoza</div>
+        <div class="footer-addr">Juan B. Alberdi s/n, M5519 Guaymallén, Mendoza</div>
+      </div>
+      <ul class="footer-links" aria-label="Links del pie de página">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="accesibilidad.html">Accesibilidad</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <div class="footer-copy">© 2026 Nexo Studio</div>
+    </div>
+  </footer>
+
+</body>
+</html>
